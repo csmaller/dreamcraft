@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import HeroImage from "../../content/assets/superior_rectangle.png";
+
 
 const HeroContainer = styled.div`
   background-size: cover;
@@ -24,7 +24,7 @@ const HeroContainer = styled.div`
 const Hero = (props) =>{
     return (
         <HeroContainer>
-            <img src={HeroImage} className="hero-image-source" />
+            main image here
         </HeroContainer>
     );
 }

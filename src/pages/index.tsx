@@ -28,19 +28,14 @@ function MainContent(props) {
   return (
     <div className={props.className}>
       <HeaderText type="h3">Welcome</HeaderText>
-      <p>Whether it's learning skills on the mountain bike, 
-          training hard for that big race, 
-          learning how to rock climb,
-          finding the deep untracked lines,
-          or exploring one of the many great ski resorts in the Wasatch 
-          Jackalope Adventures will be your guide.
+      <p>stuff here
       </p>
     </div>
   );
 }
 
 export default function IndexPage(props) {
-  const news = props.data.news;
+  const news = props.data.news || "";
 
   useEffect(() => {
     if (typeof "window" !== "undefined") {
@@ -48,34 +43,38 @@ export default function IndexPage(props) {
     }
   }, [])
 
-  const siteTitle = "Jackalope Adventures - Home Page"
+  const siteTitle = "Dreamcraft - Home Page"
 
   return (
       <Layout location={props.location} title={siteTitle}>
         <SEO
-          title="Home"
-          keywords={[`mountain bike lessons`, `enduro mountain bike lessons`, `bike lessons utah`,`jackalope adventures`, `jackalope`, `backcountry skiing`, `utah ski touring`]}
+          description="tiling in Utah"
+          lang="en"
+          title="Contact"
+          meta="we work tiling in utah"
+          keywords={[`tiling in utah`, 'cabinets in utah', 'cabinets and tiling']}
         />
         <Hero />
-        <MainContainer className="row position-relative">
+        <MainContainer className="row position-relative w-100">
           <MainContent className="col-12 col-lg-6"/>
-          <News className="col-12 col-lg-6" news={news} />
+          NEWS
+          {/* <News className="col-12 col-lg-6" news={news} /> */}
         </MainContainer>
       </Layout>
   );
 }
 
-export const pageQuery = graphql` query {
+// export const pageQuery = graphql` query {
   
-    news: mdx(frontmatter: {path: {eq: "news"}}) {
-      frontmatter {
-        date(formatString: "MMMM D,y")
-        description
-        path
-        title
-      }
-      body
-    }
-}
+//     news: mdx(frontmatter: {path: {eq: "news"}}) {
+//       frontmatter {
+//         date(formatString: "MMMM D,y")
+//         description
+//         path
+//         title
+//       }
+//       body
+//     }
+// }
 
-`;
+// `;

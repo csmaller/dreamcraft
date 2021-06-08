@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import ReactGA from 'react-ga';
-import TOURING from "../../content/assets/touring.jpg";
 import { Form, Button } from "react-bootstrap";
 ReactGA.initialize(process.env.GOOGLE_ID);
 
@@ -57,8 +56,11 @@ export default function Contact(props) {
     return (
         <Layout location={props.location} title={siteTitle} layoutClassName="justify-content-center">
             <SEO
+                description="tiling in Utah"
+                lang="en"
                 title="Contact"
-                keywords={[`utah ski touring`, 'backcountry skiing utah', 'ski and snowboard instructor utah']}
+                meta="we work tiling in utah"
+                keywords={[`tiling in utah`, 'cabinets in utah', 'cabinets and tiling']}
             />
             <Honeypot />
             <div className="row">
@@ -87,7 +89,7 @@ export default function Contact(props) {
                     </Form>
                 </div>
                 <div className="col-12 col-lg-6">
-                    <img src={TOURING} alt="touring" />
+                    PIC HERE
                 </div>
             </div>
         </Layout>

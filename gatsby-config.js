@@ -89,8 +89,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Jackalope Blog`,
-        short_name: `Jackalope`,
+        name: `DreamCraft`,
+        short_name: `DreamCraft`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,

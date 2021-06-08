@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby";
 import { Button } from "react-bootstrap";
 import "../../style.scss";
-import Logo from "../../content/assets/logo_no_bg.png";
+// import Logo from "../../content/assets/logo_no_bg.png";
 import styled from "styled-components";
 import { SocialIcon } from 'react-social-icons';
 import classNames from "classnames";
@@ -19,7 +19,8 @@ export default function Layout(props) {
       <>
         <div className="col-lg-1 col-4">
           <Link to={`/`} >
-            <img src={Logo} className="float-left" />
+            {/* <img src={Logo} className="float-left" /> */}
+            LOGO HERE
           </Link>
         </div>
         <nav className="col-lg-11 col-8 mb-4 mt-0 justify-content-left bg-primary mt-4 p-0">
@@ -45,16 +46,14 @@ export default function Layout(props) {
             <Header />
           </HeaderContainer>
           <MainContainer className={classNames(layoutClass, "row")}>
-            <main className="px-2 px-lg-0">{children}</main>
+            <main className="px-2 px-lg-0 w-100">{children}</main>
           </MainContainer>
         </LayoutContainer>
         <Footer className="align-content-center">
-          <p><a href="https://www.jackalopeadventures.com">jackalopeadventures.com &trade;</a></p>
-          <SocialIcon url="https://www.facebook.com/jackalopeAdventureTouring"/>
-          <SocialIcon url="https://www.instagram.com/jackalopeadventures/" />
-          <Link to="/blog/" disabled={location.pathname === "/blog/"}>
-            Personal Blog
-          </Link>
+          <p><a href="https://www.dreamcraft.xyz">www.dreamcraft.xyz &trade;</a></p>
+          {/* <SocialIcon url="https://www.facebook.com/jackalopeAdventureTouring"/>
+          <SocialIcon url="https://www.instagram.com/jackalopeadventures/" /> */}
+          
         </Footer>
       </Wrapper>
     </Container>
