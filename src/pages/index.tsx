@@ -58,23 +58,23 @@ export default function IndexPage(props) {
         <MainContainer className="row position-relative w-100">
           <MainContent className="col-12 col-lg-6"/>
           NEWS
-          {/* <News className="col-12 col-lg-6" news={news} /> */}
+          <News className="col-12 col-lg-6" news={news} />
         </MainContainer>
       </Layout>
   );
 }
 
-// export const pageQuery = graphql` query {
+export const pageQuery = graphql` query {
   
-//     news: mdx(frontmatter: {path: {eq: "news"}}) {
-//       frontmatter {
-//         date(formatString: "MMMM D,y")
-//         description
-//         path
-//         title
-//       }
-//       body
-//     }
-// }
+    news: mdx(frontmatter: {path: {eq: "news"}}) {
+      frontmatter {
+        date(formatString: "MMMM D,y")
+        description
+        path
+        title
+      }
+      body
+    }
+}
 
-// `;
+`;
