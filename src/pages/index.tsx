@@ -3,8 +3,8 @@ import styled from "styled-components";
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ReactGA from 'react-ga';
-// import { graphql } from "gatsby";
-// import News from "../components/news";
+import { graphql } from "gatsby";
+import News from "../components/news";
 import Hero from "../components/hero";
 import HeaderText from "../components/headerText";
 
@@ -35,7 +35,7 @@ function MainContent(props) {
 }
 
 export default function IndexPage(props) {
- // const news = props.data.news || "";
+ const news = props.data.news || "";
 
   useEffect(() => {
     if (typeof "window" !== "undefined") {
@@ -54,27 +54,25 @@ export default function IndexPage(props) {
           meta="we work tiling in utah"
           keywords={[`tiling in utah`, 'cabinets in utah', 'cabinets and tiling']}
         />
-        <Hero />
         <MainContainer className="row position-relative w-100">
           <MainContent className="col-12 col-lg-6"/>
-          NEWS
-          {/* <News className="col-12 col-lg-6" news={news} /> */}
+          <News className="col-12 col-lg-6" news={news} />
         </MainContainer>
       </Layout>
   );
 }
 
-// export const pageQuery = graphql` query {
+export const pageQuery = graphql` query {
   
-//     news: mdx(frontmatter: {path: {eq: "news"}}) {
-//       frontmatter {
-//         date(formatString: "MMMM D,y")
-//         description
-//         path
-//         title
-//       }
-//       body
-//     }
-// }
+    news: mdx(frontmatter: {path: {eq: "news"}}) {
+      frontmatter {
+        date(formatString: "MMMM D,y")
+        description
+        path
+        title
+      }
+      body
+    }
+}
 
-// `;
+ `;

@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby";
 import { Button } from "react-bootstrap";
 import "../../style.scss";
-// import Logo from "../../content/assets/logo_no_bg.png";
+import Logo from "../../content/assets/jackalopelogo.jpg";
 import styled from "styled-components";
 import { SocialIcon } from 'react-social-icons';
 import classNames from "classnames";
@@ -19,8 +19,7 @@ export default function Layout(props) {
       <>
         <div className="col-lg-1 col-4">
           <Link to={`/`} >
-            {/* <img src={Logo} className="float-left" /> */}
-            LOGO HERE
+            <img src={Logo} className="float-left" />
           </Link>
         </div>
         <nav className="col-lg-11 col-8 mb-4 mt-0 justify-content-left bg-primary mt-4 p-0">
