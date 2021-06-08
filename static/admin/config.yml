@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: csmaller/blog
+  repo: csmaller/dreamcraft
 media_library:
   name: uploadcare
   config:
@@ -18,12 +18,12 @@ collections:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
-      - { name: description, label: Description,  required: false}
+      - { name: description, label: Description, required: false }
       - { name: body, label: Body, widget: markdown }
-      - { name: image, label: Image, widget: image,
-          media_library: {
-            config: 
-              { multiple: true }
-          }
-             
-      }
+      - {
+          name: image,
+          label: Image,
+          widget: image,
+          required: false,
+          media_library: { config: { multiple: true } },
+        }
