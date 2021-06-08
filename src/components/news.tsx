@@ -7,13 +7,17 @@ const NewsContainer = styled.div`
    
 `;
 
-const News = (props)=>{
+const News = (props) => {
     return (
         <NewsContainer className={props.className}>
-            <HeaderText type="h3">News</HeaderText>
-           <div>
-                <MDXRenderer>{props.news.body}</MDXRenderer>
-            </div>
+            {props.news &&
+                <>
+                    <HeaderText type="h3">News</HeaderText>
+                    <div>
+                        <MDXRenderer>{props.news.body}</MDXRenderer>
+                    </div>
+                </>
+            }
         </NewsContainer>
     )
 }
