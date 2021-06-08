@@ -1,6 +1,7 @@
 backend:
   name: github
   repo: csmaller/dreamcraft
+  branch: main
 media_folder: content/assets
 public_folder: ../assets
 publish_mode: editorial_workflow
