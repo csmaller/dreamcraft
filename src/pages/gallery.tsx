@@ -1,6 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import ImageGallery from "react-photo-gallery";
-import 'react-gallery-carousel/dist/index.css';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import styled from "styled-components";
