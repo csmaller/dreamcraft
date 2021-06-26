@@ -53,7 +53,7 @@ export default function About(props) {
     <Layout location={props.location} title={siteTitle}>
       <SEO
         title="About"
-        keywords={[`jackalope adventures`, `jackalope`, `backcountry skiing`, `utah ski touring`]}
+        keywords={[`dreamcraft cabinetry`]}
       />
       <MainContainer className="col-12 justify-content-center">
         <MainContent />
