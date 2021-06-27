@@ -1,0 +1,23 @@
+backend:
+  name: github
+  repo: csmaller/dreamcraft
+  branch: main
+media_library:
+  name: uploadcare
+  config:
+    publicKey: 60843127cafe4343ff93
+media_folder: content/assets
+public_folder: ../assets
+publish_mode: editorial_workflow
+
+collections:
+  - name: blog
+    label: Blog
+    folder: content/blog
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: date }
+      - { name: title, label: Title }
+      - { name: description, label: Description, required: false }
+      - { name: body, label: Body, widget: markdown }
