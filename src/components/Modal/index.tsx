@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Modal } from "react-bootstrap";
+import { Button, Modal } from "react-bootstrap";
 import styled from "styled-components";
 
 const Backdrop = styled("div")`
@@ -16,9 +16,25 @@ const Backdrop = styled("div")`
 const ModalWrapper = styled(Modal)`
 @media (min-width: 576px){
     .modal-dialog {
-        max-width:80vw;
+        max-width:70vw;
         max-height:70vh;
         margin: 1.75rem auto;
+
+        img{
+            margin-bottom: 0;
+            border: 4px solid white;
+            border-radius:5px;
+        }
+
+        button{
+            background: white;
+            position: absolute;
+            z-index:10000;
+            right: 10px;
+            top:10px;
+            color:red;
+            border-color:red;
+        }
     }
 }
 `;
@@ -45,6 +61,7 @@ export default (props) => {
         >
             {props.image && 
                 <div>
+                    <Button onClick={handleHide}>X</Button>
                     <img src={props.image.src} width={props.width}/>
                 </div>
             }
