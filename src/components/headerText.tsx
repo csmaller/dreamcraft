@@ -12,10 +12,10 @@ const HeaderTextContainer = styled.div`
 const HeaderText = (props) => {
     return (
         <HeaderTextContainer>
-            {React.createElement(
+            {props&& React.createElement(
                 props.type,
                 [props],
-                [...props.children]
+                [props.children]
             )}
         </HeaderTextContainer>
     )

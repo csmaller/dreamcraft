@@ -5,12 +5,11 @@ import SEO from '../components/seo';
 import styled from "styled-components";
 import SelectedImage from '../components/SelectedImage';
 import Modal from "../components/Modal";
-import { indexOf } from 'core-js/core/array';
 
 const images = [];
 for (let i = 1; i < 21; i++) {
     images.push({
-        src: "images/" + i + ".JPG", 
+        src: "/images/" + i + ".JPG", 
         width: 1,
         height: 1
     });

@@ -5,8 +5,6 @@ import SEO from "../components/seo"
 import ReactGA from 'react-ga';
 import { graphql } from "gatsby";
 import News from "../components/news";
-import Hero from "../components/hero";
-import HeaderText from "../components/headerText";
 
 ReactGA.initialize(process.env.GOOGLE_ID);
 
@@ -27,7 +25,7 @@ const MainContainer = styled.div`
 function MainContent(props) {
   return (
     <div className={props.className}>
-      <HeaderText type="h3">Welcome</HeaderText>
+      <h3>Welcome</h3>
       <p>stuff here
       </p>
     </div>
@@ -51,7 +49,6 @@ export default function IndexPage(props) {
           description="tiling in Utah"
           lang="en"
           title="Contact"
-          meta="we work tiling in utah"
           keywords={[`tiling in utah`, 'cabinets in utah', 'cabinets and tiling']}
         />
         <MainContainer className="row position-relative w-100">

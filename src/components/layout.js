@@ -24,16 +24,16 @@ export default function Layout(props) {
         </div>
         <nav className="col-lg-11 col-8 mb-4 mt-0 justify-content-left bg-primary mt-4 p-0">
           <Link to="/" disabled={location.pathname === "/"}>
-            <Button marginTop="35px">Home</Button>
+            <Button>Home</Button>
           </Link>
           <Link to="/about/" disabled={location.pathname === "/about/"}>
-            <Button marginTop="35px">About Us</Button>
+            <Button>About Us</Button>
           </Link>
           <Link to="/gallery/" disabled={location.pathname === "/gallery/"}>
-            <Button marginTop="35px">Gallery</Button>
+            <Button>Gallery</Button>
           </Link>
           <Link to="/contact/" disabled={location.pathname === "/contact/"}>
-            <Button marginTop="35px">Contact Us</Button>
+            <Button>Contact Us</Button>
           </Link>
         </nav>
       </>

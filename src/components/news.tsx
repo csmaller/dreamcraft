@@ -12,7 +12,7 @@ const News = (props) => {
         <NewsContainer className={props.className}>
             {props.news &&
                 <>
-                    <HeaderText type="h3">News</HeaderText>
+                    <h3>News</h3>
                     <div>
                         <MDXRenderer>{props.news.body}</MDXRenderer>
                     </div>
