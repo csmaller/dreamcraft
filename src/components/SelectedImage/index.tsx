@@ -28,11 +28,11 @@ const SelectedImage = ({
     index,
     photo,
     margin,
-    direction,
     onClick,
     top,
     left,
-    selected
+    selected,
+    direction ="column"
 }) => {
 
     //calculate x,y scale

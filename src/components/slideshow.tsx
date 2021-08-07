@@ -14,7 +14,6 @@ const SlideContainer = styled.div`
     margin: auto; 
 
   .slick-slide {
-
     img {
         width: 100%;
         max-height: 600px;
@@ -24,11 +23,52 @@ const SlideContainer = styled.div`
 }
 `;
 
+const ImageContainer = styled.div`
+
+    position: relative;
+    div{
+        position: absolute;
+        top: 50px;
+        left: 100px;
+        text-align: center;
+        max-width: 350px;
+        font-size: 20px;
+        color: white;
+
+        hr{
+            margin-top: 15px;
+            margin-bottom: 15px;
+            border-top: 6px solid white;
+        }
+
+        button{
+            padding: 10px;
+            padding-left:50px;
+            padding-right:50px;
+            font-size:20px;
+            opacity: .8;
+            -webkit-transition: background-color,.3s border,.3s;
+            -o-transition: background-color,.3s border,.3s;
+            transition: background-color,.3s border,.3s;
+        }
+
+    }
+`;
+
 const CustomSlide = ({ image }) => {
     return (
-        <div>
+        <ImageContainer>
             <img src={image} />
-        </div>
+            <div>
+                <h1>Here Is A Header</h1>
+                <hr></hr>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <button className="btn-primary"> here is a button!</button>
+            </div>
+
+        </ImageContainer>
     );
 }
 

@@ -1,12 +1,8 @@
 import React from "react"
-import { Link } from "gatsby";
-import { Button } from "react-bootstrap";
+import Header from "./header";
 import "../../style.scss";
-import Logo from "../../content/assets/jackalopelogo.jpg";
 import styled from "styled-components";
-import { SocialIcon } from 'react-social-icons';
 import classNames from "classnames";
-import { Container } from "react-bootstrap";
 
 export default function Layout(props) {
 
@@ -14,34 +10,8 @@ export default function Layout(props) {
   const rootPath = `${__PATH_PREFIX__}/`
   const blogPath = `${__PATH_PREFIX__}/blog/`
 
-  function Header() {
-    return (
-      <>
-        <div className="col-lg-1 col-4">
-          <Link to={`/`} >
-            <img src={Logo} className="float-left" />
-          </Link>
-        </div>
-        <nav className="col-lg-11 col-8 mb-4 mt-0 justify-content-left bg-primary mt-4 p-0">
-          <Link to="/" disabled={location.pathname === "/"}>
-            <Button>Home</Button>
-          </Link>
-          <Link to="/about/" disabled={location.pathname === "/about/"}>
-            <Button>About Us</Button>
-          </Link>
-          <Link to="/gallery/" disabled={location.pathname === "/gallery/"}>
-            <Button>Gallery</Button>
-          </Link>
-          <Link to="/contact/" disabled={location.pathname === "/contact/"}>
-            <Button>Contact Us</Button>
-          </Link>
-        </nav>
-      </>
-    );
-  }
-
   return (
-    <Container>
+    <div className="w-100 py-3">
       <Wrapper >
         <LayoutContainer >
           <HeaderContainer className="row mb-0">
@@ -58,7 +28,7 @@ export default function Layout(props) {
           
         </Footer>
       </Wrapper>
-    </Container>
+    </div>
   )
 }
 
@@ -78,8 +48,8 @@ const MainContainer = styled.div`
 
 const HeaderContainer = styled.div`
   position:relative;
-  margin-left: -12%;
-  margin-right: -12%;
+  margin-left: 2%;
+  margin-right: 2%; 
   
   nav {
     height: 40px;
