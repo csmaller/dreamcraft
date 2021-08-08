@@ -27,7 +27,7 @@ const HeaderContainer = styled.div`
     }
 `;
 
-function Header() {
+function Header({location}) {
     return (
         <HeaderContainer>
             <div className="col-lg-1 col-4">

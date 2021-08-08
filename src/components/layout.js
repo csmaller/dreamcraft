@@ -15,7 +15,7 @@ export default function Layout(props) {
       <Wrapper >
         <LayoutContainer >
           <HeaderContainer className="row mb-0">
-            <Header />
+            <Header location={props.location} />
           </HeaderContainer>
           <MainContainer className={classNames(layoutClass, "row")}>
             <main className="px-2 px-lg-0 w-100">{children}</main>
@@ -25,7 +25,7 @@ export default function Layout(props) {
           <p><a href="https://www.dreamcraft.xyz">www.dreamcraft.xyz &trade;</a></p>
           {/* <SocialIcon url="https://www.facebook.com/jackalopeAdventureTouring"/>
           <SocialIcon url="https://www.instagram.com/jackalopeadventures/" /> */}
-          
+
         </Footer>
       </Wrapper>
     </div>
