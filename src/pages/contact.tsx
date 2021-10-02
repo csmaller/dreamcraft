@@ -71,7 +71,7 @@ export default function Contact(props) {
                 description="tiling in Utah"
                 lang="en"
                 title="Contact"
-                meta="we work tiling in utah"
+                meta={["we work tiling in utah", "we work cabinetry in Utah and California"]}
                 keywords={[`tiling in utah`, 'cabinets in utah', 'cabinets and tiling']}
             />
             <Honeypot />

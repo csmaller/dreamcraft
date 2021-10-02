@@ -239,13 +239,13 @@ var plugins = [{
     "background_color": "#ffffff",
     "theme_color": "#663399",
     "display": "minimal-ui",
-    "icon": "content/assets/jackalopelogo.jpg",
+    "icon": "content/assets/logo.png",
     "legacy": true,
     "theme_color_in_head": true,
     "cache_busting_mode": "query",
     "crossOrigin": "anonymous",
     "include_favicon": true,
-    "cacheDigest": null
+    "cacheDigest": "c87837df9c0f330e5f51bc16592d5bca"
   }
 }, {
   plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-typography/gatsby-ssr */ "./node_modules/gatsby-plugin-typography/gatsby-ssr.js"),
