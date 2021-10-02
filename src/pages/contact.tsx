@@ -71,10 +71,11 @@ export default function Contact(props) {
                 description="tiling in Utah"
                 lang="en"
                 title="Contact"
-                meta={["we work tiling in utah", "we work cabinetry in Utah and California"]}
+                meta={[`we work tiling in utah`, `we work cabinetry in Utah and California`]}
                 keywords={[`tiling in utah`, 'cabinets in utah', 'cabinets and tiling']}
             />
             <Honeypot />
+            <ToastContainer />
             <div className="row">
                 <div className="col-12 col-lg-6">
                     <Form name={process.env.FORM_NAME} onSubmit={handleSubmit} data-netlify="true" method="POST">
