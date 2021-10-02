@@ -2,7 +2,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import { Button } from "react-bootstrap";
-import Logo from "../../public/images/logo.png";
+import Logo from "../../content/assets/logo.png";
 import styled from "styled-components";
 import { SocialIcon } from 'react-social-icons';
 import classNames from "classnames";
@@ -27,7 +27,7 @@ const HeaderContainer = styled.div`
     }
 `;
 
-function Header({location}) {
+function Header({ location }) {
     return (
         <HeaderContainer>
             <div className="col-lg-1 col-4">
