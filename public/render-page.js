@@ -245,7 +245,7 @@ var plugins = [{
     "cache_busting_mode": "query",
     "crossOrigin": "anonymous",
     "include_favicon": true,
-    "cacheDigest": "6b039b23154253fb52c4772f547a12f1"
+    "cacheDigest": null
   }
 }, {
   plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-typography/gatsby-ssr */ "./node_modules/gatsby-plugin-typography/gatsby-ssr.js"),
